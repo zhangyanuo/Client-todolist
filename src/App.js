@@ -24,7 +24,8 @@ const LineWrap = styled(Box)`
 `
 
 function App() {
-  const [list, setList] = useState([]);
+
+  const [list, setList] = useState([{_id:'12345',isEdit:true,status:0,name:'sss'}]);
 
 
   const addToDo = async (item) => {
@@ -109,19 +110,21 @@ function App() {
 
   const fetchData = async () => {
 
-    const result = await getList();
-    setList(result.data.todoList);
+   // const result = await getList();
+    //setList(result.data.todoList);
 
   };
   
   useEffect(() => {
-    fetchData();
+  
+    //  fetchData();
 
   }, [])
 
 
   return (<div className="App">
     <header className="App-header">
+
       <ConstructKit>
         <Container>
           <Title>TO DO LIST</Title>

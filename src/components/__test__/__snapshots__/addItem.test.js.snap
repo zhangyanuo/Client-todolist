@@ -2,4 +2,6 @@
 
 exports[`AddItems render the text inside it 1`] = `ShallowWrapper {}`;
 
+exports[`AddItems test render AddItems component Button Add 1`] = `ShallowWrapper {}`;
+
 exports[`render AddItems component 1`] = `ShallowWrapper {}`;

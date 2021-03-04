@@ -12,7 +12,7 @@ function AddItems(props) {
         let ids = list[list.length - 1].id;
         ids++;
         const txt = inputRef.current.value
-        addToDo({ id: ids, isEdit: true, name: txt, status: 0 },)
+        addToDo({ _id: ids, isEdit: true, name: txt, status: 0 },)
     }
 
     return (
@@ -23,7 +23,7 @@ function AddItems(props) {
                 hideLabel
                 placeholder="What to do today?"
             />
-            <AddButton class='add-button' onClick={addItem} variant="tertiary" sizeVariant="medium">Add</AddButton>
+            <button className='addButton' onClick={addItem} variant="tertiary" sizeVariant="medium">Add</button>
         </Inline >
     )
 }
